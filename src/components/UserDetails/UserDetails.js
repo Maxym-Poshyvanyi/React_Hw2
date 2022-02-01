@@ -1,5 +1,5 @@
-const UserDetails = ({user}) => {
-    const {id, name, username, email} = {user};
+const UserDetails = ({user, getUserId}) => {
+    const {id, name, username, email} = user;
 
     return (
         <div>
@@ -7,7 +7,7 @@ const UserDetails = ({user}) => {
             <div>{name}</div>
             <div>{username}</div>
             <div>{email}</div>
-            <button>Posts</button>
+            <button onClick={()=>getUserId(id)}>Posts</button>
         </div>
     );
 };
