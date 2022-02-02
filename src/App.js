@@ -7,7 +7,6 @@ import {postService} from "./service/post.service";
 
 const App = () => {
     const [user, setUser] = useState(null);
-    const [userId, setUserId] = useState(null)
     const [posts, setPosts] = useState([])
 
     const getUser = (user) => {

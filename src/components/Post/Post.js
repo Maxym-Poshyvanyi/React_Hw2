@@ -10,4 +10,5 @@ const Post = ({post: {id, userId, title, body}}) => {
     );
 };
 
+
 export default Post;
